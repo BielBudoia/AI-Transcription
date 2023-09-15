@@ -11,7 +11,7 @@ Un programa echo para transcribir videos "shorts" del youtube<br/>
 
 <br>
 <p align="center">
-  <img alt="projeto DevLinks" src="./public/Cover.png" width="100%">
+  <img alt="projeto AI" src="./public/Cover.png" width="100%">
 </p>
 ## 🚀 Tecnologias
 Ese proyecto fue desarrollado con las seguientes tecnologias:
