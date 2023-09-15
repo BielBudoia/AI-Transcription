@@ -4,11 +4,11 @@ import ffmpeg from "fluent-ffmpeg"
 import ffmpegStatic from "ffmpeg-static"
 
 const filePath = "./tmp/audio.mp4"
-const outputPath = filePath.replace("mp4", "wav")
+const outputPath = filePath.replace(".mp4", ".wav")
 
 export const convert = () =>
   new Promise((resolve, reject) => {
-    console.log("Transcribing video... ")
+    console.log("Convertendo o vídeo...")
 
     ffmpeg.setFfmpegPath(ffmpegStatic)
     ffmpeg()
@@ -23,13 +23,13 @@ export const convert = () =>
         const audioData = fileDecoded.channelData[0]
         const floatArray = new Float32Array(audioData)
 
-        console.log("Video transcribed.")
+        console.log("Vídeo convertido com sucesso!")
 
         resolve(floatArray)
         fs.unlinkSync(outputPath)
       })
       .on("error", (error) => {
-        console.log("Transcription failed", error)
+        console.log("Erro ao converter o vídeo", error)
         reject(error)
       })
       .save(outputPath)
