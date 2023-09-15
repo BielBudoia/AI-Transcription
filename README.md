@@ -22,4 +22,3 @@ Ese proyecto fue desarrollado con las seguientes tecnologias:
 - Figma
 - Phosphor Icons
 - Bibliotecas de IA: Xenova/transformers, fluent-ffmpeg, ffmpeg-static y node-wav.
-
